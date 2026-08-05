@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+<style>
+*{
+    margin: 0px;
+    
+}
+h1,p{
+    text-align: center;
+}
+main{
+    margin: auto;
+    background-color: white;
+    width: 250px;
+    padding: 5px;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    
+}
+body{
+    background-color: purple;
+}
+
+
+
+div#imagem{
+    background-image: url(imagens/metal.jpg);
+    height: 200px;
+    background-size: cover;
+    background-position: center bottom ;
+    background-repeat: no-repeat;
+   
+}
+input.caixa, input.botão{
+    width: 200px;
+    height: 30px;
+    padding: 5px;
+    margin: 5px;
+}
+input.botão{
+    margin-left: 18px;
+    width: 213px;
+    height: 40px;
+   
+}
+
+
+</style>
+</head>
+
+
+
+<body>
+
+
+  <main>
+<div 
+id="imagem">
+
+</div>
+<h1>Login</h1>
+<p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações do seu ambiente.</p>
+      <form action="login.php" method="post">
+
+
+<div>
+<label for="mail">#</label>
+<input type="email" id="mail" name="email" required autocomplete="email"
+placeholder="seu e-mail" class="caixa" >  <br>
+
+<label for="senha">#</label>
+<input type="password" id="senha" name="password" required minlength="8" maxlength="100"
+autocomplete="new-password" placeholder="sua senha" class="caixa">
+
+</div>
+
+<div>
+    <input type="submit" value="Entrar" class="botão">
+</div>
+
+<div>
+    <input type="button" value="Esqueci a senha" class="botão">
+</div>
+
+      </form>
+  </main>
+
+
+
+</body>
+</html>
