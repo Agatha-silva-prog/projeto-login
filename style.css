@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+
+    main{
+      min-width: 90vw;
+     height: 37vh; 
+    }
+
+form{
+    text-align: right;
+    display: none;
+    
+}
+input.botão{
+    width: 500px;
+}
+
+main > section{
+     width: 70%;
+    float: right;
+    
+   
+}
+main > div#imagem{
+    border-radius: 20px 0px 0px 20px;
+   height: 100%;
+    width: 30%;
+    float: left;
+}
+
+p{
+    margin-left: 10px;
+}
+}
+
+@media screen and (min-width: 992px) {
+    main > div#imagem
+    {
+float: right;
+height: 100%;
+width: 50%;
+border-radius: 0px 20px 20px 0px;
+
+    }
+    main > section {
+        float: left;
+        width: 50%;
+    }
+    main {
+        
+        width: 900px;
+        max-width: 930px;
+    }
+}
