@@ -9,14 +9,14 @@
 
 form{
     text-align: right;
-    display: none;
+    display: block;
     
 }
 input.botão{
     width: 500px;
 }
 
-main > section{
+main > div#section{
      width: 70%;
     float: right;
     
@@ -32,7 +32,19 @@ main > div#imagem{
 p{
     margin-left: 10px;
 }
+body{
+    background-image: linear-gradient( rgba(108, 8, 148, 0.952), turquoise
+    );
+   height: 100vh;
 }
+}
+
+
+
+
+
+
+
 
 @media screen and (min-width: 992px) {
     main > div#imagem
@@ -43,13 +55,21 @@ width: 50%;
 border-radius: 0px 20px 20px 0px;
 
     }
-    main > section {
+    main > div#section {
         float: left;
         width: 50%;
+      
     }
-    main {
+   main {
         
-        width: 900px;
-        max-width: 930px;
+        
+       
+     min-width: 80vw;
     }
+
+    form{
+        display: block;
+    }
+
+    
 }

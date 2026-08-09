@@ -4,117 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=person" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="mobile.css">
 
-<style>
-*{
-    margin: 0px;
-   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-h1,p{
-    text-align: center;
-    
-}
-h1{
-    padding: 10px;
-}
-p{
-    font-size: 0.8em;
-    text-align: justify;
-   padding: 3px;
-  
-    padding-bottom: 5px;
-}
-main{
-    margin: auto;
-    background-color: white;
-    width: 250px;
-    padding: 0px;
-    border-radius: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    box-shadow: 1px 1px 8px rgb(31, 30, 30);
-    
-
-  
-   
-    
-}
-body{
-    background-color: rgba(83, 0, 122, 0.849);
-     
-}
-
-
-
-div#imagem{
-    overflow: hidden;
-    background-image: url(imagens/metal.jpg);
-    height: 200px;
-    background-size: cover;
-    background-position: center bottom ;
-    background-repeat: no-repeat;
-    border-radius: 20px 20px 0px 0px;
-   
-}
-div#imagem, section{
-    display: block;
-    transition: width .5s;
-    transition-timing-function: ease;
-     
-}
-input.caixa, input.botão{
-    
-   
-    padding: 5px;
-    margin: 2px;
-    border-radius: 6px;
-    
-}
-input.caixa{
-    margin-left: 58px;
-    width: 165px;
-    background-color: #94cfcd;
-    height: 20px;
-    border-color: transparent;
-
-    
-    
-}
-
-
-input.botão{
-    margin-left: 7px;
-    width: 236px;
-    height: 40px;
-   
-}
-input#entrar{
-    border: 1px solid rgb(0, 135, 145);
-    background-color: rgb(0, 135, 145);
-    color: white;
-}
-
-input#senhab{
-    border: 1px solid rgb(0, 135, 145);
-    margin-bottom: 20px;
-    color: rgb(0, 135, 145);
-}
-
-.material-symbols-outlined{
-   position: absolute;
-   top: 323px;
-   left: 13px;
-   font-size: 2em;
-   background-color: rgba(66, 0, 104, 0.849);
-   border-radius: 6px;
-   color: white;
-   
-}
-</style>
 </head>
 
 
@@ -123,35 +17,44 @@ input#senhab{
 
 
   <main>
+    
 <div 
 id="imagem">
 
 </div >
-<section>
+<div id="section">
 <h1>Login</h1>
 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações do seu ambiente.</p>
-     </section>
+</div >
 <form action="login.php" method="post">
 
 
 <div>
+
+   
 <label for="mail"></label>
 
-
+<span class="material-symbols-outlined">
+person
+</span>
 
 <input type="email" id="mail" name="email" required autocomplete="email"
 placeholder="seu e-mail" class="caixa" >  <br>
 
-<label for="senha"></label>
+ 
 
 
-
+<label for="senha">  </label>
+<span class="material-symbols-outlined">
+vpn_key
+</span>
 <input type="password" id="senha" name="password" required minlength="8" maxlength="100"
 autocomplete="new-password" placeholder="sua senha" class="caixa" >
 
 </div>
 
 <div>
+
     <input type="submit" value="Entrar" class="botão" id="entrar">
 </div>
 
